@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodingSathi - Your Coding Companion</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo">
+        <span class="navbar__logo-icon">
+          <i class="fas fa-code"></i>
+        </span>
+        <span class="navbar__logo-text">Coding<span class="highlight">Sathi</span></span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <ul class="navbar__links">
+          <li><a href="#home" class="navbar__link active">Home</a></li>
+          <li><a href="#courses" class="navbar__link">Courses</a></li>
+          <li><a href="#features" class="navbar__link">Features</a></li>
+          <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#" class="navbar__btn navbar__btn--outline">Log In</a>
+        <a href="#" class="navbar__btn navbar__btn--primary">Sign Up</a>
+      </div>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__container">
+      <div class="hero__content">
+        <span class="hero__badge">Learn to Code Today</span>
+        <h1 class="hero__title">
+          Master Programming with
+          <span class="gradient-text">CodingSathi</span>
+        </h1>
+        <p class="hero__description">
+          Your trusted coding companion. Learn web development, data science,
+          and software engineering with hands-on projects and expert guidance.
+        </p>
+        <div class="hero__buttons">
+          <a href="#courses" class="btn btn--primary">
+            <i class="fas fa-rocket"></i> Get Started
+          </a>
+          <a href="#features" class="btn btn--outline">
+            <i class="fas fa-play-circle"></i> Watch Demo
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">10K+</span>
+            <span class="hero__stat-label">Students</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">50+</span>
+            <span class="hero__stat-label">Courses</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">95%</span>
+            <span class="hero__stat-label">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__code-card">
+          <div class="code-card__header">
+            <span class="code-card__dot code-card__dot--red"></span>
+            <span class="code-card__dot code-card__dot--yellow"></span>
+            <span class="code-card__dot code-card__dot--green"></span>
+            <span class="code-card__title">app.js</span>
+          </div>
+          <pre class="code-card__body"><code><span class="code-keyword">const</span> <span class="code-variable">greeting</span> = () => {
+  <span class="code-keyword">return</span> <span class="code-string">"Welcome to CodingSathi!"</span>;
+};
+
+<span class="code-variable">console</span>.<span class="code-function">log</span>(<span class="code-variable">greeting</span>());
+<span class="code-comment">// Start your coding journey</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__badge">Popular Courses</span>
+        <h2 class="section__title">Learn In-Demand Skills</h2>
+        <p class="section__subtitle">
+          Choose from our curated courses designed to help you succeed in tech
+        </p>
+      </div>
+      <div class="courses__grid">
+        <div class="course-card">
+          <div class="course-card__icon course-card__icon--blue">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3 class="course-card__title">Web Development</h3>
+          <p class="course-card__description">
+            Build modern, responsive websites with HTML, CSS, JavaScript, and React.
+          </p>
+          <div class="course-card__meta">
+            <span><i class="fas fa-clock"></i> 40 Hours</span>
+            <span><i class="fas fa-signal"></i> Beginner</span>
+          </div>
+          <a href="#" class="course-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__icon course-card__icon--purple">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3 class="course-card__title">Python Programming</h3>
+          <p class="course-card__description">
+            Master Python for web apps, automation, data analysis, and machine learning.
+          </p>
+          <div class="course-card__meta">
+            <span><i class="fas fa-clock"></i> 35 Hours</span>
+            <span><i class="fas fa-signal"></i> Beginner</span>
+          </div>
+          <a href="#" class="course-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__icon course-card__icon--green">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="course-card__title">Data Science</h3>
+          <p class="course-card__description">
+            Analyze data, build models, and create visualizations with real-world datasets.
+          </p>
+          <div class="course-card__meta">
+            <span><i class="fas fa-clock"></i> 45 Hours</span>
+            <span><i class="fas fa-signal"></i> Intermediate</span>
+          </div>
+          <a href="#" class="course-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card__icon course-card__icon--orange">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="course-card__title">Mobile Development</h3>
+          <p class="course-card__description">
+            Create cross-platform mobile apps with React Native and Flutter.
+          </p>
+          <div class="course-card__meta">
+            <span><i class="fas fa-clock"></i> 50 Hours</span>
+            <span><i class="fas fa-signal"></i> Intermediate</span>
+          </div>
+          <a href="#" class="course-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__badge">Why Choose Us</span>
+        <h2 class="section__title">Features That Set Us Apart</h2>
+        <p class="section__subtitle">
+          We provide the best learning experience for aspiring developers
+        </p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="feature-card__title">Hands-On Projects</h3>
+          <p class="feature-card__description">
+            Build real-world projects that you can add to your portfolio.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-card__title">Community Support</h3>
+          <p class="feature-card__description">
+            Join a thriving community of learners and mentors.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3 class="feature-card__title">Certificates</h3>
+          <p class="feature-card__description">
+            Earn certificates recognized by top tech companies.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-infinity"></i>
+          </div>
+          <h3 class="feature-card__title">Lifetime Access</h3>
+          <p class="feature-card__description">
+            Access all course materials forever, including future updates.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3 class="feature-card__title">Expert Instructors</h3>
+          <p class="feature-card__description">
+            Learn from industry professionals with years of experience.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="feature-card__title">24/7 Support</h3>
+          <p class="feature-card__description">
+            Get help whenever you need it from our dedicated team.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__badge">Testimonials</span>
+        <h2 class="section__title">What Our Students Say</h2>
+        <p class="section__subtitle">
+          Hear from our successful graduates
+        </p>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "CodingSathi helped me transition from a non-tech role to a full-stack developer
+            in just 6 months. The hands-on projects were invaluable."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RA</div>
+            <div>
+              <h4 class="testimonial-card__name">Rahim Ahmed</h4>
+              <span class="testimonial-card__role">Full-Stack Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "The Python and Data Science courses are top-notch. The community support
+            made learning so much easier and enjoyable."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SK</div>
+            <div>
+              <h4 class="testimonial-card__name">Sultana Khatun</h4>
+              <span class="testimonial-card__role">Data Analyst</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Best coding platform I've used. The instructors are amazing and the
+            course content is always up-to-date with industry standards."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MH</div>
+            <div>
+              <h4 class="testimonial-card__name">Masud Hasan</h4>
+              <span class="testimonial-card__role">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section__container">
+      <div class="section__header">
+        <span class="section__badge">Get In Touch</span>
+        <h2 class="section__title">Contact Us</h2>
+        <p class="section__subtitle">
+          Have questions? We'd love to hear from you
+        </p>
+      </div>
+      <div class="contact__wrapper">
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@codingsathi.com</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+880 1234 567890</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Address</h4>
+              <p>Dhaka, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="contact__form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="contact__form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="contact__form-group">
+            <input type="text" placeholder="Subject" />
+          </div>
+          <div class="contact__form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="navbar__logo">
+            <span class="navbar__logo-icon">
+              <i class="fas fa-code"></i>
+            </span>
+            <span class="navbar__logo-text">Coding<span class="highlight">Sathi</span></span>
+          </a>
+          <p class="footer__description">
+            Your trusted coding companion. Learn, build, and grow with us.
+          </p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Mobile Dev</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 CodingSathi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
