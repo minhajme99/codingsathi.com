@@ -9,6 +9,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-icon"><i class="fas fa-code"></i></span>
+        <span class="navbar__logo-text">Coding<span class="highlight">Sathi</span></span>
+      </a>
+      <nav class="navbar__menu" id="navMenu">
+        <ul class="navbar__links">
+          <li><a href="index.html#home" class="navbar__link">Home</a></li>
+          <li><a href="index.html#courses" class="navbar__link">Courses</a></li>
+          <li><a href="index.html#features" class="navbar__link">Features</a></li>
+          <li><a href="index.html#testimonials" class="navbar__link">Testimonials</a></li>
+          <li><a href="index.html#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__actions" id="navActions">
+        <a href="login.html" class="navbar__btn navbar__btn--outline">Log In</a>
+        <a href="signup.html" class="navbar__btn navbar__btn--primary">Sign Up</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
   <div class="auth-page">
     <div class="auth-card">
       <div class="auth-card__header">
