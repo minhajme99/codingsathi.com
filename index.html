@@ -445,19 +445,6 @@
     </div>
   </footer>
 
-  <!-- Auth Gate -->
-  <div class="auth-gate" id="authGate" style="display:none">
-    <div class="auth-gate__card">
-      <div class="auth-gate__icon"><i class="fas fa-lock"></i></div>
-      <h2>Login Required</h2>
-      <p>Please log in or create a free account to access CodingSathi courses and features.</p>
-      <div class="auth-gate__buttons">
-        <a href="login.html" class="auth-gate__btn auth-gate__btn--primary">Log In</a>
-        <a href="signup.html" class="auth-gate__btn auth-gate__btn--outline">Sign Up</a>
-      </div>
-    </div>
-  </div>
-
   <script src="js/auth.js"></script>
   <script src="js/main.js"></script>
   <script>
@@ -473,9 +460,6 @@
           </span>
           <button onclick="Auth.logout();location.reload();" class="navbar__btn navbar__btn--outline" style="cursor:pointer;background:none;border:1px solid rgba(255,255,255,0.3);color:#a0a0b8;">Log Out</button>
         `;
-      } else {
-        document.getElementById("authGate").style.display = "flex";
-        document.body.style.overflow = "hidden";
       }
     });
   </script>
