@@ -37,9 +37,9 @@
         </ul>
       </nav>
 
-      <div class="navbar__actions">
-        <a href="#" class="navbar__btn navbar__btn--outline">Log In</a>
-        <a href="#" class="navbar__btn navbar__btn--primary">Sign Up</a>
+      <div class="navbar__actions" id="navActions">
+        <a href="login.html" class="navbar__btn navbar__btn--outline">Log In</a>
+        <a href="signup.html" class="navbar__btn navbar__btn--primary">Sign Up</a>
       </div>
 
       <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
@@ -445,6 +445,39 @@
     </div>
   </footer>
 
+  <!-- Auth Gate -->
+  <div class="auth-gate" id="authGate" style="display:none">
+    <div class="auth-gate__card">
+      <div class="auth-gate__icon"><i class="fas fa-lock"></i></div>
+      <h2>Login Required</h2>
+      <p>Please log in or create a free account to access CodingSathi courses and features.</p>
+      <div class="auth-gate__buttons">
+        <a href="login.html" class="auth-gate__btn auth-gate__btn--primary">Log In</a>
+        <a href="signup.html" class="auth-gate__btn auth-gate__btn--outline">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const actions = document.getElementById("navActions");
+      if (Auth.isLoggedIn()) {
+        const user = Auth.getCurrentUser();
+        const initials = user.name.split(" ").map(n => n[0]).join("").toUpperCase().slice(0, 2);
+        actions.innerHTML = `
+          <span style="display:flex;align-items:center;gap:8px;">
+            <span style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6c5ce7,#00cec9);border-radius:50%;color:#fff;font-size:0.7rem;font-weight:700;">${initials}</span>
+            <span style="font-size:0.85rem;font-weight:600;color:#fff;">${Auth.escapeHtml(user.name)}</span>
+          </span>
+          <button onclick="Auth.logout();location.reload();" class="navbar__btn navbar__btn--outline" style="cursor:pointer;background:none;border:1px solid rgba(255,255,255,0.3);color:#a0a0b8;">Log Out</button>
+        `;
+      } else {
+        document.getElementById("authGate").style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+    });
+  </script>
 </body>
 </html>
